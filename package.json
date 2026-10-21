@@ -1,0 +1,40 @@
+{
+  "name": "claude-codetrace",
+  "version": "0.1.0",
+  "description": "See what Claude Code changed in your code: a local web UI that turns session transcripts into readable diffs.",
+  "type": "module",
+  "bin": {
+    "codetrace": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --watch",
+    "start": "node dist/cli.js",
+    "typecheck": "tsc",
+    "test": "node --test \"test/**/*.test.ts\""
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "diff",
+    "visualization"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeff-Jins/claude-codetrace.git"
+  },
+  "dependencies": {
+    "diff": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
+  }
+}

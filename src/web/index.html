@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>codetrace</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <header class="brand"><span class="logo" aria-hidden="true">◆</span> codetrace</header>
+        <div class="sidebar-controls">
+          <input id="search" type="search" placeholder="Filter sessions" autocomplete="off" />
+          <label class="check"><input id="show-empty" type="checkbox" /> Show sessions without changes</label>
+        </div>
+        <nav id="session-list" class="session-list" aria-label="Sessions"></nav>
+      </aside>
+      <main id="main" class="main">
+        <div class="placeholder">Loading sessions…</div>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
